@@ -1,0 +1,123 @@
+.header {
+  height: 7.5rem;
+  padding: 2rem;
+  border-bottom: 1px solid $color-grey-light;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 12rem;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__img {
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    border-radius: 50%;
+  }
+
+  &__text {
+    display: inline-block;
+
+    font-size: 2rem;
+    font-weight: 800;
+    color: $color-grey;
+  }
+}
+
+/**************************/
+/* Navigation */
+/**************************/
+
+.navigation {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  @media only screen and (max-width: $bp-small) {
+    order: 1;
+    flex: 0 0 100%;
+    margin-top: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-grey-dark;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-secondary;
+  }
+}
+
+/**************************/
+/* BUTTON */
+/**************************/
+
+.btn {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-radius: 1rem;
+
+  &__full:link,
+  &__full:visited {
+    display: inline-block;
+    margin-right: 1rem;
+    background-color: #fff;
+    color: $color-secondary;
+    border: none;
+    border: 1px solid $color-secondary;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      background-color: $color-secondary-light;
+      color: #fff;
+      border: 1px solid transparent;
+    }
+  }
+
+  &__outline:link,
+  &__outline:visited {
+    display: inline-block;
+    background-color: $color-secondary-light;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+  }
+}

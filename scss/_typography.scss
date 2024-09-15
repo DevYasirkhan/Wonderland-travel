@@ -1,0 +1,53 @@
+.heading-1 {
+  color: $color-grey;
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.heading-2 {
+  color: $color-grey;
+
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.heading-3 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: $color-grey;
+
+  span {
+    font-size: 4rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+}
+
+.heading-4 {
+  font-size: 2rem;
+  color: $color-grey;
+  font-weight: 700;
+  &__prime {
+    color: $color-secondary;
+  }
+}
+
+.mb-huge {
+  margin-bottom: 4rem;
+}
+
+.mb-big {
+  margin-bottom: 2.8rem;
+
+  @media only screen and (max-width: $bp-big) {
+    margin-bottom: 1rem;
+  }
+}
+
+.mb-medium {
+  margin-bottom: 2rem;
+}
+
+.mb-small {
+  margin-bottom: 0.8rem;
+}
